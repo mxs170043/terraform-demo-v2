@@ -1,17 +1,21 @@
 terraform {
-
   cloud {
-    organization = "organization-name"
-
+    organization = "hashicorp-trainingqwr"
     workspaces {
-      name = "learn-terraform"
+      name = "terraform-demo-v2"
     }
   }
 
   required_providers {
+
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.31.0"
+      version = "5.64.0"
+    }
+    
+    google = {
+      source  = "hashicorp/google"
+      version = "6.0.1"
     }
   }
 
