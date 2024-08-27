@@ -5,7 +5,7 @@ provider "aws" {
 provider "google" {
   project     = "elegant-zodiac-433701-m0"
   region      = "us-central1"
-  credentials = data.local_file.google-credentials.content
+  credentials = var.google_credentials
 }
 
 resource "google_compute_network" "vpc_network" {

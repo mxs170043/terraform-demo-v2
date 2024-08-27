@@ -12,3 +12,8 @@ variable "instance_name" {
   description = "EC2 instance name"
   default     = "Provisioned by Terraform"
 }
+
+variable "google_credentials" {
+  description = "Google Cloud credentials JSON"
+  type        = string
+}
