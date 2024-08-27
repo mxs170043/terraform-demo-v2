@@ -16,4 +16,5 @@ variable "instance_name" {
 variable "google_credentials" {
   description = "Google Cloud credentials JSON"
   type        = string
+  default = ""
 }
